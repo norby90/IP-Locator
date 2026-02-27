@@ -1,1 +1,49 @@
 
+██╗██████╗     ██╗      ██████╗  ██████╗ █████╗ ████████╗ ██████╗ ██████╗
+██║██╔══██╗    ██║     ██╔═══██╗██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+██║██████╔╝    ██║     ██║   ██║██║     ███████║   ██║   ██║   ██║██████╔╝
+██║██╔═══╝     ██║     ██║   ██║██║     ██╔══██║   ██║   ██║   ██║██╔══██╗
+██║██║         ███████╗╚██████╔╝╚██████╗██║  ██║   ██║   ╚██████╔╝██║  ██║
+╚═╝╚═╝         ╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+
+"Every device connected to the internet leaves a trace. This tool reads it."
+
+A Python command-line tool that retrieves detailed geographic and network information for any IP address using the ip-api.com API.
+Features
+
+Detects country, region, and city
+Displays ISP and network provider info
+Returns precise coordinates (latitude & longitude)
+Fast results directly in your terminal
+
+        Requirements
+Python 3.8+
+requests library
+
+
+
+             Installation
+git clone https://github.com/norby90/ip-locator.git
+cd ip-locator
+python3 ip-locator.py
+
+
+
+          Usage
+bashpython main.py 8.8.8.8
+Example Output
+IP Address  : 8.8.8.8
+Country     : United States
+Region      : California
+City        : Mountain View
+ISP         : Google LLC
+Latitude    : 37.4056
+Longitude   : 122.0775
+
+  
+  API
+Uses ip-api.com free tier — 45 requests/minute, no API key required.
+
+
+License
+MIT © n0rby90
